@@ -43,7 +43,10 @@ NeoBundle 'suy/vim-ctrlp-commandline'
 NeoBundle 'rking/ag.vim'
 " プロジェクトに入ってるESLintを読み込む
 NeoBundle 'pmsorhaindo/syntastic-local-eslint.vim'
-
+" vim でシェルコマンドを実行できるようにする
+NeoBundle 'b4b4r07/vim-shellutils'
+" vim でカレントディレクトリのフォルダ構成を表示
+NeoBundle 'scrooloose/nerdtree'
 " vimのlua機能が使える時だけ以下のVimプラグインをインストールする
 if has('lua')
     " コードの自動補完
@@ -127,6 +130,7 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <down> gj
 nnoremap <up> gk
+nnoremap <silent><C-f> :NERDTreeToggle<CR>
 
 " バックスペースキーの有効化
 set backspace=indent,eol,start
