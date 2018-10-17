@@ -132,6 +132,11 @@ nnoremap <down> gj
 nnoremap <up> gk
 nnoremap <silent><C-f> :NERDTreeToggle<CR>
 
+"[insert mode] 行頭へ移動
+inoremap <C-a> <C-o>^
+"[insert mode] 行末へ移動
+inoremap <C-e> <C-o>$
+
 " バックスペースキーの有効化
 set backspace=indent,eol,start
 
