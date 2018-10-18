@@ -132,6 +132,13 @@ nnoremap <down> gj
 nnoremap <up> gk
 nnoremap <silent><C-f> :NERDTreeToggle<CR>
 
+"右のタブに移動
+nnoremap <C-h> gT
+"左のタブに移動
+nnoremap <C-l> gt
+"新しくタブを開く
+nnoremap <C-t> :<C-u>tabnew<CR>
+
 "[insert mode] 行頭へ移動
 inoremap <C-a> <C-o>^
 "[insert mode] 行末へ移動
