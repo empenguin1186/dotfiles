@@ -1,7 +1,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-source ~/.bash_profile
-source ~/.zprofile
+if [ -f '~/.bash_profile' ]; then source ~/.bash_profile; fi
+if [ -f '~/.zprofile' ]; then source ~/.zprofile; fi
 
 function powerline_precmd() {
   PS1="$(powerline-shell --shell zsh $?)
